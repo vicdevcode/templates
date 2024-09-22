@@ -1,0 +1,765 @@
+@layer base {
+  .dark-theme {
+    --base-neutral: hsla(220, 25%, 35%, 1.00);
+
+    --base-accent: hsla(220, 100%, 50%, 1.00);
+
+    --base-success: hsla(142, 99%, 31%, 1.00);
+
+    --base-warning: hsla(36, 100%, 47%, 1.00);
+
+    --base-error: hsla(354, 82%, 47%, 1.00);
+
+    --base-info: hsla(207, 100%, 55%, 1.00);
+
+    --base-status-01: hsla(166, 100%, 35%, 1.00);
+
+    --base-status-02: hsla(194, 83%, 40%, 1.00);
+
+    --base-status-03: hsla(248, 89%, 64%, 1.00);
+
+    --base-status-04: hsla(272, 100%, 57%, 1.00);
+
+    --base-status-05: hsla(334, 75%, 56%, 1.00);
+
+    --base-status-06: hsla(20, 100%, 49%, 1.00);
+
+    --neutral-1000: hsla(0, 0%, 0%, 1.00);
+
+    --neutral-990: hsla(220, 24%, 7%, 1.00);
+
+    --neutral-950: hsla(221, 25%, 13%, 1.00);
+
+    --neutral-925: hsla(219, 26%, 15%, 1.00);
+
+    --neutral-900: hsla(219, 25%, 18%, 1.00);
+
+    --neutral-800: hsla(220, 25%, 21%, 1.00);
+
+    --neutral-700: hsla(221, 24%, 25%, 1.00);
+
+    --neutral-600: hsla(219, 25%, 30%, 1.00);
+
+    --neutral-500: hsla(220, 25%, 35%, 1.00);
+
+    --neutral-400: hsla(220, 15%, 48%, 1.00);
+
+    --neutral-300: hsla(220, 14%, 58%, 1.00);
+
+    --neutral-200: hsla(221, 13%, 68%, 1.00);
+
+    --neutral-100: hsla(220, 15%, 84%, 1.00);
+
+    --neutral-50: hsla(216, 15%, 94%, 1.00);
+
+    --neutral-25: hsla(240, 12%, 97%, 1.00);
+
+    --neutral-10: hsla(210, 20%, 98%, 1.00);
+
+    --neutral-0: hsla(0, 0%, 100%, 1.00);
+
+    --accent-1000: hsla(0, 0%, 0%, 1.00);
+
+    --accent-990: hsla(220, 100%, 10%, 1.00);
+
+    --accent-950: hsla(220, 100%, 17%, 1.00);
+
+    --accent-925: hsla(220, 100%, 22%, 1.00);
+
+    --accent-900: hsla(220, 100%, 25%, 1.00);
+
+    --accent-800: hsla(220, 100%, 30%, 1.00);
+
+    --accent-700: hsla(220, 100%, 35%, 1.00);
+
+    --accent-600: hsla(220, 100%, 43%, 1.00);
+
+    --accent-500: hsla(220, 100%, 50%, 1.00);
+
+    --accent-400: hsla(220, 100%, 60%, 1.00);
+
+    --accent-300: hsla(220, 100%, 67%, 1.00);
+
+    --accent-200: hsla(220, 100%, 75%, 1.00);
+
+    --accent-100: hsla(220, 100%, 87%, 1.00);
+
+    --accent-50: hsla(221, 100%, 95%, 1.00);
+
+    --accent-25: hsla(217, 100%, 97%, 1.00);
+
+    --accent-10: hsla(218, 100%, 98%, 1.00);
+
+    --accent-0: hsla(0, 0%, 100%, 1.00);
+
+    --success-1000: hsla(0, 0%, 0%, 1.00);
+
+    --success-990: hsla(142, 100%, 6%, 1.00);
+
+    --success-950: hsla(142, 100%, 11%, 1.00);
+
+    --success-925: hsla(143, 100%, 13%, 1.00);
+
+    --success-900: hsla(142, 98%, 16%, 1.00);
+
+    --success-800: hsla(142, 98%, 19%, 1.00);
+
+    --success-700: hsla(142, 98%, 22%, 1.00);
+
+    --success-600: hsla(142, 99%, 27%, 1.00);
+
+    --success-500: hsla(142, 99%, 31%, 1.00);
+
+    --success-400: hsla(142, 55%, 45%, 1.00);
+
+    --success-300: hsla(142, 45%, 55%, 1.00);
+
+    --success-200: hsla(143, 45%, 66%, 1.00);
+
+    --success-100: hsla(142, 45%, 83%, 1.00);
+
+    --success-50: hsla(144, 43%, 93%, 1.00);
+
+    --success-25: hsla(143, 44%, 96%, 1.00);
+
+    --success-10: hsla(144, 45%, 98%, 1.00);
+
+    --success-0: hsla(0, 0%, 100%, 1.00);
+
+    --warning-1000: hsla(0, 0%, 0%, 1.00);
+
+    --warning-990: hsla(36, 100%, 9%, 1.00);
+
+    --warning-950: hsla(36, 100%, 17%, 1.00);
+
+    --warning-925: hsla(36, 100%, 20%, 1.00);
+
+    --warning-900: hsla(36, 100%, 24%, 1.00);
+
+    --warning-800: hsla(36, 100%, 28%, 1.00);
+
+    --warning-700: hsla(36, 100%, 33%, 1.00);
+
+    --warning-600: hsla(36, 100%, 40%, 1.00);
+
+    --warning-500: hsla(36, 100%, 47%, 1.00);
+
+    --warning-400: hsla(36, 91%, 58%, 1.00);
+
+    --warning-300: hsla(36, 91%, 66%, 1.00);
+
+    --warning-200: hsla(36, 91%, 74%, 1.00);
+
+    --warning-100: hsla(35, 91%, 87%, 1.00);
+
+    --warning-50: hsla(35, 92%, 95%, 1.00);
+
+    --warning-25: hsla(40, 86%, 97%, 1.00);
+
+    --warning-10: hsla(38, 100%, 98%, 1.00);
+
+    --warning-0: hsla(0, 0%, 100%, 1.00);
+
+    --error-1000: hsla(0, 0%, 0%, 1.00);
+
+    --error-990: hsla(354, 83%, 9%, 1.00);
+
+    --error-950: hsla(354, 83%, 16%, 1.00);
+
+    --error-925: hsla(354, 82%, 20%, 1.00);
+
+    --error-900: hsla(354, 82%, 24%, 1.00);
+
+    --error-800: hsla(354, 82%, 28%, 1.00);
+
+    --error-700: hsla(354, 82%, 33%, 1.00);
+
+    --error-600: hsla(354, 82%, 40%, 1.00);
+
+    --error-500: hsla(354, 82%, 47%, 1.00);
+
+    --error-400: hsla(354, 72%, 57%, 1.00);
+
+    --error-300: hsla(354, 72%, 65%, 1.00);
+
+    --error-200: hsla(354, 72%, 73%, 1.00);
+
+    --error-100: hsla(355, 73%, 87%, 1.00);
+
+    --error-50: hsla(354, 70%, 95%, 1.00);
+
+    --error-25: hsla(354, 71%, 97%, 1.00);
+
+    --error-10: hsla(350, 75%, 98%, 1.00);
+
+    --error-0: hsla(0, 0%, 100%, 1.00);
+
+    --info-1000: hsla(0, 0%, 0%, 1.00);
+
+    --info-990: hsla(207, 82%, 11%, 1.00);
+
+    --info-950: hsla(207, 82%, 19%, 1.00);
+
+    --info-925: hsla(207, 82%, 24%, 1.00);
+
+    --info-900: hsla(207, 82%, 28%, 1.00);
+
+    --info-800: hsla(207, 82%, 33%, 1.00);
+
+    --info-700: hsla(207, 82%, 39%, 1.00);
+
+    --info-600: hsla(207, 82%, 47%, 1.00);
+
+    --info-500: hsla(207, 100%, 55%, 1.00);
+
+    --info-400: hsla(207, 100%, 64%, 1.00);
+
+    --info-300: hsla(207, 100%, 71%, 1.00);
+
+    --info-200: hsla(207, 100%, 77%, 1.00);
+
+    --info-100: hsla(207, 100%, 89%, 1.00);
+
+    --info-50: hsla(206, 100%, 95%, 1.00);
+
+    --info-25: hsla(205, 100%, 98%, 1.00);
+
+    --info-10: hsla(206, 100%, 99%, 1.00);
+
+    --info-0: hsla(0, 0%, 100%, 1.00);
+
+    --status-01-1000: hsla(0, 0%, 0%, 1.00);
+
+    --status-01-990: hsla(165, 100%, 7%, 1.00);
+
+    --status-01-950: hsla(166, 100%, 12%, 1.00);
+
+    --status-01-925: hsla(165, 100%, 15%, 1.00);
+
+    --status-01-900: hsla(166, 100%, 17%, 1.00);
+
+    --status-01-800: hsla(166, 100%, 21%, 1.00);
+
+    --status-01-700: hsla(166, 100%, 25%, 1.00);
+
+    --status-01-600: hsla(166, 100%, 30%, 1.00);
+
+    --status-01-500: hsla(166, 100%, 35%, 1.00);
+
+    --status-01-400: hsla(166, 58%, 48%, 1.00);
+
+    --status-01-300: hsla(166, 54%, 58%, 1.00);
+
+    --status-01-200: hsla(165, 54%, 68%, 1.00);
+
+    --status-01-100: hsla(165, 54%, 84%, 1.00);
+
+    --status-01-50: hsla(166, 52%, 94%, 1.00);
+
+    --status-01-25: hsla(167, 53%, 97%, 1.00);
+
+    --status-01-10: hsla(160, 60%, 98%, 1.00);
+
+    --status-01-0: hsla(0, 0%, 100%, 1.00);
+
+    --status-02-1000: hsla(0, 0%, 0%, 1.00);
+
+    --status-02-990: hsla(194, 85%, 8%, 1.00);
+
+    --status-02-950: hsla(194, 83%, 14%, 1.00);
+
+    --status-02-925: hsla(194, 84%, 17%, 1.00);
+
+    --status-02-900: hsla(195, 83%, 20%, 1.00);
+
+    --status-02-800: hsla(194, 84%, 24%, 1.00);
+
+    --status-02-700: hsla(195, 83%, 28%, 1.00);
+
+    --status-02-600: hsla(194, 84%, 34%, 1.00);
+
+    --status-02-500: hsla(194, 83%, 40%, 1.00);
+
+    --status-02-400: hsla(195, 56%, 52%, 1.00);
+
+    --status-02-300: hsla(195, 56%, 61%, 1.00);
+
+    --status-02-200: hsla(194, 56%, 70%, 1.00);
+
+    --status-02-100: hsla(194, 56%, 85%, 1.00);
+
+    --status-02-50: hsla(194, 55%, 94%, 1.00);
+
+    --status-02-25: hsla(193, 60%, 97%, 1.00);
+
+    --status-02-10: hsla(192, 56%, 98%, 1.00);
+
+    --status-02-0: hsla(0, 0%, 100%, 1.00);
+
+    --status-03-1000: hsla(0, 0%, 0%, 1.00);
+
+    --status-03-990: hsla(249, 51%, 13%, 1.00);
+
+    --status-03-950: hsla(248, 50%, 23%, 1.00);
+
+    --status-03-925: hsla(249, 50%, 27%, 1.00);
+
+    --status-03-900: hsla(249, 50%, 32%, 1.00);
+
+    --status-03-800: hsla(249, 50%, 38%, 1.00);
+
+    --status-03-700: hsla(249, 50%, 45%, 1.00);
+
+    --status-03-600: hsla(248, 59%, 55%, 1.00);
+
+    --status-03-500: hsla(248, 89%, 64%, 1.00);
+
+    --status-03-400: hsla(248, 89%, 71%, 1.00);
+
+    --status-03-300: hsla(248, 90%, 77%, 1.00);
+
+    --status-03-200: hsla(248, 89%, 82%, 1.00);
+
+    --status-03-100: hsla(249, 91%, 91%, 1.00);
+
+    --status-03-50: hsla(248, 89%, 96%, 1.00);
+
+    --status-03-25: hsla(253, 100%, 98%, 1.00);
+
+    --status-03-10: hsla(252, 100%, 99%, 1.00);
+
+    --status-03-0: hsla(0, 0%, 100%, 1.00);
+
+    --status-04-1000: hsla(0, 0%, 0%, 1.00);
+
+    --status-04-990: hsla(273, 76%, 11%, 1.00);
+
+    --status-04-950: hsla(272, 75%, 20%, 1.00);
+
+    --status-04-925: hsla(272, 76%, 25%, 1.00);
+
+    --status-04-900: hsla(272, 75%, 29%, 1.00);
+
+    --status-04-800: hsla(272, 75%, 34%, 1.00);
+
+    --status-04-700: hsla(272, 75%, 40%, 1.00);
+
+    --status-04-600: hsla(272, 75%, 49%, 1.00);
+
+    --status-04-500: hsla(272, 100%, 57%, 1.00);
+
+    --status-04-400: hsla(272, 100%, 66%, 1.00);
+
+    --status-04-300: hsla(272, 100%, 72%, 1.00);
+
+    --status-04-200: hsla(272, 100%, 79%, 1.00);
+
+    --status-04-100: hsla(273, 100%, 89%, 1.00);
+
+    --status-04-50: hsla(273, 100%, 96%, 1.00);
+
+    --status-04-25: hsla(273, 100%, 98%, 1.00);
+
+    --status-04-10: hsla(274, 100%, 99%, 1.00);
+
+    --status-04-0: hsla(0, 0%, 100%, 1.00);
+
+    --status-05-1000: hsla(0, 0%, 0%, 1.00);
+
+    --status-05-990: hsla(335, 58%, 11%, 1.00);
+
+    --status-05-950: hsla(335, 60%, 19%, 1.00);
+
+    --status-05-925: hsla(335, 59%, 24%, 1.00);
+
+    --status-05-900: hsla(335, 59%, 28%, 1.00);
+
+    --status-05-800: hsla(334, 59%, 34%, 1.00);
+
+    --status-05-700: hsla(335, 59%, 39%, 1.00);
+
+    --status-05-600: hsla(335, 60%, 47%, 1.00);
+
+    --status-05-500: hsla(334, 75%, 56%, 1.00);
+
+    --status-05-400: hsla(334, 76%, 65%, 1.00);
+
+    --status-05-300: hsla(334, 75%, 71%, 1.00);
+
+    --status-05-200: hsla(334, 75%, 78%, 1.00);
+
+    --status-05-100: hsla(334, 75%, 89%, 1.00);
+
+    --status-05-50: hsla(332, 74%, 95%, 1.00);
+
+    --status-05-25: hsla(333, 82%, 98%, 1.00);
+
+    --status-05-10: hsla(336, 71%, 99%, 1.00);
+
+    --status-05-0: hsla(0, 0%, 100%, 1.00);
+
+    --status-06-1000: hsla(0, 0%, 0%, 1.00);
+
+    --status-06-990: hsla(20, 100%, 10%, 1.00);
+
+    --status-06-950: hsla(20, 100%, 17%, 1.00);
+
+    --status-06-925: hsla(20, 100%, 21%, 1.00);
+
+    --status-06-900: hsla(20, 100%, 25%, 1.00);
+
+    --status-06-800: hsla(20, 100%, 29%, 1.00);
+
+    --status-06-700: hsla(20, 100%, 34%, 1.00);
+
+    --status-06-600: hsla(20, 100%, 42%, 1.00);
+
+    --status-06-500: hsla(20, 100%, 49%, 1.00);
+
+    --status-06-400: hsla(20, 96%, 59%, 1.00);
+
+    --status-06-300: hsla(20, 96%, 67%, 1.00);
+
+    --status-06-200: hsla(20, 97%, 75%, 1.00);
+
+    --status-06-100: hsla(20, 97%, 87%, 1.00);
+
+    --status-06-50: hsla(19, 100%, 95%, 1.00);
+
+    --status-06-25: hsla(18, 100%, 97%, 1.00);
+
+    --status-06-10: hsla(22, 100%, 98%, 1.00);
+
+    --status-06-0: hsla(0, 0%, 100%, 1.00);
+
+    --fg-default: hsla(220, 24%, 7%, 1.00);
+
+    --fg-soft: hsla(220, 25%, 35%, 1.00);
+
+    --fg-muted: hsla(220, 14%, 58%, 1.00);
+
+    --fg-disabled: hsla(220, 25%, 35%, 0.50);
+
+    --bg-surface1: hsla(0, 0%, 100%, 1.00);
+
+    --bg-surface2: hsla(210, 20%, 98%, 1.00);
+
+    --bg-surface3: hsla(240, 12%, 97%, 1.00);
+
+    --bg-surface4: hsla(216, 15%, 94%, 1.00);
+
+    --bg-surface5: hsla(220, 15%, 84%, 1.00);
+
+    --bg-page: hsla(0, 0%, 100%, 1.00);
+
+    --bg-disabled: hsla(220, 25%, 35%, 0.10);
+
+    --bg-elevated-0: hsla(0, 0%, 100%, 1.00);
+
+    --bg-elevated-s: hsla(0, 0%, 100%, 1.00);
+
+    --bg-elevated-m: hsla(0, 0%, 100%, 1.00);
+
+    --bg-elevated-l: hsla(0, 0%, 100%, 1.00);
+
+    --bg-elevated-xl: hsla(0, 0%, 100%, 1.00);
+
+    --border-default: hsla(220, 25%, 35%, 0.50);
+
+    --border-soft: hsla(220, 25%, 35%, 0.25);
+
+    --border-muted: hsla(220, 25%, 35%, 0.15);
+
+    --accent-default: hsla(220, 100%, 50%, 1.00);
+
+    --accent-soft: hsla(220, 100%, 60%, 1.00);
+
+    --accent-muted: hsla(220, 100%, 75%, 1.00);
+
+    --accent-hover: hsla(220, 100%, 43%, 1.00);
+
+    --accent-active: hsla(220, 100%, 35%, 1.00);
+
+    --accent-on-accent: hsla(0, 0%, 100%, 1.00);
+
+    --accent-container-default: hsla(220, 100%, 50%, 0.10);
+
+    --accent-container-soft: hsla(220, 100%, 50%, 0.05);
+
+    --accent-container-muted: hsla(220, 100%, 50%, 0.03);
+
+    --accent-container-hover: hsla(220, 100%, 50%, 0.20);
+
+    --accent-container-active: hsla(220, 100%, 50%, 0.30);
+
+    --accent-on-container: hsla(220, 100%, 50%, 1.00);
+
+    --neutral-default: hsla(220, 25%, 35%, 1.00);
+
+    --neutral-soft: hsla(220, 15%, 48%, 1.00);
+
+    --neutral-muted: hsla(221, 13%, 68%, 1.00);
+
+    --neutral-hover: hsla(219, 25%, 30%, 1.00);
+
+    --neutral-active: hsla(221, 24%, 25%, 1.00);
+
+    --neutral-on-neutral: hsla(0, 0%, 100%, 1.00);
+
+    --neutral-container-default: hsla(220, 25%, 35%, 0.10);
+
+    --neutral-container-soft: hsla(220, 25%, 35%, 0.05);
+
+    --neutral-container-muted: hsla(220, 25%, 35%, 0.03);
+
+    --neutral-container-hover: hsla(220, 25%, 35%, 0.20);
+
+    --neutral-container-active: hsla(220, 25%, 35%, 0.30);
+
+    --neutral-on-container: hsla(220, 25%, 35%, 1.00);
+
+    --success-default: hsla(142, 99%, 31%, 1.00);
+
+    --success-soft: hsla(142, 55%, 45%, 1.00);
+
+    --success-muted: hsla(143, 45%, 66%, 1.00);
+
+    --success-hover: hsla(142, 99%, 27%, 1.00);
+
+    --success-active: hsla(142, 98%, 22%, 1.00);
+
+    --success-on-success: hsla(0, 0%, 100%, 1.00);
+
+    --success-container-default: hsla(142, 99%, 31%, 0.10);
+
+    --success-container-soft: hsla(142, 99%, 31%, 0.05);
+
+    --success-container-muted: hsla(142, 99%, 31%, 0.03);
+
+    --success-container-hover: hsla(142, 99%, 31%, 0.20);
+
+    --success-container-active: hsla(142, 99%, 31%, 0.30);
+
+    --success-on-container: hsla(142, 99%, 31%, 1.00);
+
+    --warning-default: hsla(36, 100%, 47%, 1.00);
+
+    --warning-soft: hsla(36, 91%, 58%, 1.00);
+
+    --warning-muted: hsla(36, 91%, 74%, 1.00);
+
+    --warning-hover: hsla(36, 100%, 40%, 1.00);
+
+    --warning-active: hsla(36, 100%, 33%, 1.00);
+
+    --warning-on-warning: hsla(36, 100%, 9%, 1.00);
+
+    --warning-container-default: hsla(36, 100%, 47%, 0.10);
+
+    --warning-container-soft: hsla(36, 100%, 47%, 0.05);
+
+    --warning-container-muted: hsla(36, 100%, 47%, 0.03);
+
+    --warning-container-hover: hsla(36, 100%, 47%, 0.20);
+
+    --warning-container-active: hsla(36, 100%, 47%, 0.30);
+
+    --warning-on-container: hsla(36, 100%, 40%, 1.00);
+
+    --error-default: hsla(354, 82%, 47%, 1.00);
+
+    --error-soft: hsla(354, 72%, 57%, 1.00);
+
+    --error-muted: hsla(354, 72%, 73%, 1.00);
+
+    --error-hover: hsla(354, 82%, 40%, 1.00);
+
+    --error-active: hsla(354, 82%, 33%, 1.00);
+
+    --error-on-error: hsla(0, 0%, 100%, 1.00);
+
+    --error-container-default: hsla(354, 82%, 47%, 0.10);
+
+    --error-container-soft: hsla(354, 82%, 47%, 0.05);
+
+    --error-container-muted: hsla(354, 82%, 47%, 0.03);
+
+    --error-container-hover: hsla(354, 82%, 47%, 0.20);
+
+    --error-container-active: hsla(354, 82%, 47%, 0.30);
+
+    --error-on-container: hsla(354, 82%, 47%, 1.00);
+
+    --info-default: hsla(207, 100%, 55%, 1.00);
+
+    --info-soft: hsla(207, 100%, 64%, 1.00);
+
+    --info-muted: hsla(207, 100%, 77%, 1.00);
+
+    --info-hover: hsla(207, 82%, 47%, 1.00);
+
+    --info-active: hsla(207, 82%, 39%, 1.00);
+
+    --info-on-info: hsla(0, 0%, 100%, 1.00);
+
+    --info-container-default: hsla(207, 100%, 55%, 0.10);
+
+    --info-container-soft: hsla(207, 100%, 55%, 0.05);
+
+    --info-container-muted: hsla(207, 100%, 55%, 0.03);
+
+    --info-container-hover: hsla(207, 100%, 55%, 0.20);
+
+    --info-container-active: hsla(207, 100%, 55%, 0.30);
+
+    --info-on-container: hsla(207, 100%, 55%, 1.00);
+
+    --status-01-default: hsla(166, 100%, 35%, 1.00);
+
+    --status-01-soft: hsla(166, 58%, 48%, 1.00);
+
+    --status-01-muted: hsla(165, 54%, 68%, 1.00);
+
+    --status-01-hover: hsla(166, 100%, 30%, 1.00);
+
+    --status-01-active: hsla(166, 100%, 25%, 1.00);
+
+    --status-01-on-status-01: hsla(0, 0%, 100%, 1.00);
+
+    --status-01-container-default: hsla(166, 100%, 35%, 0.10);
+
+    --status-01-container-soft: hsla(166, 100%, 35%, 0.05);
+
+    --status-01-container-muted: hsla(166, 100%, 35%, 0.03);
+
+    --status-01-container-hover: hsla(166, 100%, 35%, 0.20);
+
+    --status-01-container-active: hsla(166, 100%, 35%, 0.30);
+
+    --status-01-on-container: hsla(166, 100%, 35%, 1.00);
+
+    --status-02-default: hsla(194, 83%, 40%, 1.00);
+
+    --status-02-soft: hsla(195, 56%, 52%, 1.00);
+
+    --status-02-muted: hsla(194, 56%, 70%, 1.00);
+
+    --status-02-hover: hsla(194, 84%, 34%, 1.00);
+
+    --status-02-active: hsla(195, 83%, 28%, 1.00);
+
+    --status-02-on-status-02: hsla(0, 0%, 100%, 1.00);
+
+    --status-02-container-default: hsla(194, 83%, 40%, 0.10);
+
+    --status-02-container-soft: hsla(194, 83%, 40%, 0.05);
+
+    --status-02-container-muted: hsla(194, 83%, 40%, 0.03);
+
+    --status-02-container-hover: hsla(194, 83%, 40%, 0.20);
+
+    --status-02-container-active: hsla(194, 83%, 40%, 0.30);
+
+    --status-02-on-container: hsla(194, 83%, 40%, 1.00);
+
+    --status-03-default: hsla(248, 89%, 64%, 1.00);
+
+    --status-03-soft: hsla(248, 89%, 71%, 1.00);
+
+    --status-03-muted: hsla(248, 89%, 82%, 1.00);
+
+    --status-03-hover: hsla(248, 59%, 55%, 1.00);
+
+    --status-03-active: hsla(249, 50%, 45%, 1.00);
+
+    --status-03-on-status-03: hsla(0, 0%, 100%, 1.00);
+
+    --status-03-container-default: hsla(248, 89%, 64%, 0.10);
+
+    --status-03-container-soft: hsla(248, 89%, 64%, 0.05);
+
+    --status-03-container-muted: hsla(248, 89%, 64%, 0.03);
+
+    --status-03-container-hover: hsla(248, 89%, 64%, 0.20);
+
+    --status-03-container-active: hsla(248, 89%, 64%, 0.30);
+
+    --status-03-on-container: hsla(248, 89%, 64%, 1.00);
+
+    --status-04-default: hsla(272, 100%, 57%, 1.00);
+
+    --status-04-soft: hsla(272, 100%, 66%, 1.00);
+
+    --status-04-muted: hsla(272, 100%, 79%, 1.00);
+
+    --status-04-hover: hsla(272, 75%, 49%, 1.00);
+
+    --status-04-active: hsla(272, 75%, 40%, 1.00);
+
+    --status-04-on-status-04: hsla(0, 0%, 100%, 1.00);
+
+    --status-04-container-default: hsla(272, 100%, 57%, 0.10);
+
+    --status-04-container-soft: hsla(272, 100%, 57%, 0.05);
+
+    --status-04-container-muted: hsla(272, 100%, 57%, 0.03);
+
+    --status-04-container-hover: hsla(272, 100%, 57%, 0.20);
+
+    --status-04-container-active: hsla(272, 100%, 57%, 0.30);
+
+    --status-04-on-container: hsla(272, 100%, 57%, 1.00);
+
+    --status-05-default: hsla(334, 75%, 56%, 1.00);
+
+    --status-05-soft: hsla(334, 76%, 65%, 1.00);
+
+    --status-05-muted: hsla(334, 75%, 78%, 1.00);
+
+    --status-05-hover: hsla(335, 60%, 47%, 1.00);
+
+    --status-05-active: hsla(335, 59%, 39%, 1.00);
+
+    --status-05-on-status-05: hsla(0, 0%, 100%, 1.00);
+
+    --status-05-container-default: hsla(334, 75%, 56%, 0.10);
+
+    --status-05-container-soft: hsla(334, 75%, 56%, 0.05);
+
+    --status-05-container-muted: hsla(334, 75%, 56%, 0.03);
+
+    --status-05-container-hover: hsla(334, 75%, 56%, 0.20);
+
+    --status-05-container-active: hsla(334, 75%, 56%, 0.30);
+
+    --status-05-on-container: hsla(334, 75%, 56%, 1.00);
+
+    --status-06-default: hsla(20, 100%, 49%, 1.00);
+
+    --status-06-soft: hsla(20, 96%, 59%, 1.00);
+
+    --status-06-muted: hsla(20, 97%, 75%, 1.00);
+
+    --status-06-hover: hsla(20, 100%, 42%, 1.00);
+
+    --status-06-active: hsla(20, 100%, 34%, 1.00);
+
+    --status-06-on-status-06: hsla(0, 0%, 100%, 1.00);
+
+    --status-06-container-default: hsla(20, 100%, 49%, 0.10);
+
+    --status-06-container-soft: hsla(20, 100%, 49%, 0.05);
+
+    --status-06-container-muted: hsla(20, 100%, 49%, 0.03);
+
+    --status-06-container-hover: hsla(20, 100%, 49%, 0.20);
+
+    --status-06-container-active: hsla(20, 100%, 49%, 0.30);
+
+    --status-06-on-container: hsla(20, 100%, 49%, 1.00);
+
+    --static-white: hsla(0, 0%, 100%, 1.00);
+
+    --static-black: hsla(220, 24%, 7%, 1.00);
+  }
+}
