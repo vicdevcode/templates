@@ -1,7 +1,13 @@
+import plugin from "tailwindcss/plugin";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{tsx,ts,jsx,js}"],
   theme: {
+    extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
+    },
     colors: {
       base: {
         neutral: "hsla(var(--base-neutral))",
@@ -276,13 +282,13 @@ export default {
         muted: "hsla(var(--accent-muted))",
         hover: "hsla(var(--accent-hover))",
         active: "hsla(var(--accent-active))",
-        "on-accent": "hsla(var(--accent-on-accent))",
-        "container-default": "hsla(var(--accent-container-default))",
+        container: "hsla(var(--accent-container-default))",
         "container-soft": "hsla(var(--accent-container-soft))",
         "container-muted": "hsla(var(--accent-container-muted))",
         "container-hover": "hsla(var(--accent-container-hover))",
         "container-active": "hsla(var(--accent-container-active))",
         "on-container": "hsla(var(--accent-on-container))",
+        "on-accent": "hsla(var(--accent-on-accent))",
       },
       neutral: {
         DEFAULT: "hsla(var(--neutral-default))",
@@ -290,13 +296,13 @@ export default {
         muted: "hsla(var(--neutral-muted))",
         hover: "hsla(var(--neutral-hover))",
         active: "hsla(var(--neutral-active))",
-        "on-neutral": "hsla(var(--neutral-on-neutral))",
-        "container-default": "hsla(var(--neutral-container-default))",
+        container: "hsla(var(--neutral-container-default))",
         "container-soft": "hsla(var(--neutral-container-soft))",
         "container-muted": "hsla(var(--neutral-container-muted))",
         "container-hover": "hsla(var(--neutral-container-hover))",
         "container-active": "hsla(var(--neutral-container-active))",
         "on-container": "hsla(var(--neutral-on-container))",
+        "on-neutral": "hsla(var(--neutral-on-neutral))",
       },
       success: {
         DEFAULT: "hsla(var(--success-default))",
@@ -304,13 +310,13 @@ export default {
         muted: "hsla(var(--success-muted))",
         hover: "hsla(var(--success-hover))",
         active: "hsla(var(--success-active))",
-        "on-success": "hsla(var(--success-on-success))",
-        "container-default": "hsla(var(--success-container-default))",
+        container: "hsla(var(--success-container-default))",
         "container-soft": "hsla(var(--success-container-soft))",
         "container-muted": "hsla(var(--success-container-muted))",
         "container-hover": "hsla(var(--success-container-hover))",
         "container-active": "hsla(var(--success-container-active))",
         "on-container": "hsla(var(--success-on-container))",
+        "on-success": "hsla(var(--success-on-success))",
       },
       warning: {
         DEFAULT: "hsla(var(--warning-default))",
@@ -318,13 +324,13 @@ export default {
         muted: "hsla(var(--warning-muted))",
         hover: "hsla(var(--warning-hover))",
         active: "hsla(var(--warning-active))",
-        "on-warning": "hsla(var(--warning-on-warning))",
-        "container-default": "hsla(var(--warning-container-default))",
+        container: "hsla(var(--warning-container-default))",
         "container-soft": "hsla(var(--warning-container-soft))",
         "container-muted": "hsla(var(--warning-container-muted))",
         "container-hover": "hsla(var(--warning-container-hover))",
         "container-active": "hsla(var(--warning-container-active))",
         "on-container": "hsla(var(--warning-on-container))",
+        "on-warning": "hsla(var(--warning-on-warning))",
       },
       error: {
         DEFAULT: "hsla(var(--error-default))",
@@ -332,13 +338,13 @@ export default {
         muted: "hsla(var(--error-muted))",
         hover: "hsla(var(--error-hover))",
         active: "hsla(var(--error-active))",
-        "on-error": "hsla(var(--error-on-error))",
-        "container-default": "hsla(var(--error-container-default))",
+        container: "hsla(var(--error-container-default))",
         "container-soft": "hsla(var(--error-container-soft))",
         "container-muted": "hsla(var(--error-container-muted))",
         "container-hover": "hsla(var(--error-container-hover))",
         "container-active": "hsla(var(--error-container-active))",
         "on-container": "hsla(var(--error-on-container))",
+        "on-error": "hsla(var(--error-on-error))",
       },
       info: {
         DEFAULT: "hsla(var(--info-default))",
@@ -346,91 +352,203 @@ export default {
         muted: "hsla(var(--info-muted))",
         hover: "hsla(var(--info-hover))",
         active: "hsla(var(--info-active))",
-        "on-info": "hsla(var(--info-on-info))",
-        "container-default": "hsla(var(--info-container-default))",
+        container: "hsla(var(--info-container-default))",
         "container-soft": "hsla(var(--info-container-soft))",
         "container-muted": "hsla(var(--info-container-muted))",
         "container-hover": "hsla(var(--info-container-hover))",
         "container-active": "hsla(var(--info-container-active))",
         "on-container": "hsla(var(--info-on-container))",
+        "on-info": "hsla(var(--info-on-info))",
       },
-      "status-01-default": "hsla(var(--status-01-default))",
-      "status-01-soft": "hsla(var(--status-01-soft))",
-      "status-01-muted": "hsla(var(--status-01-muted))",
-      "status-01-hover": "hsla(var(--status-01-hover))",
-      "status-01-active": "hsla(var(--status-01-active))",
-      "status-01-on-status-01": "hsla(var(--status-01-on-status-01))",
-      "status-01-container-default": "hsla(var(--status-01-container-default))",
-      "status-01-container-soft": "hsla(var(--status-01-container-soft))",
-      "status-01-container-muted": "hsla(var(--status-01-container-muted))",
-      "status-01-container-hover": "hsla(var(--status-01-container-hover))",
-      "status-01-container-active": "hsla(var(--status-01-container-active))",
-      "status-01-on-container": "hsla(var(--status-01-on-container))",
-      "status-02-default": "hsla(var(--status-02-default))",
-      "status-02-soft": "hsla(var(--status-02-soft))",
-      "status-02-muted": "hsla(var(--status-02-muted))",
-      "status-02-hover": "hsla(var(--status-02-hover))",
-      "status-02-active": "hsla(var(--status-02-active))",
-      "status-02-on-status-02": "hsla(var(--status-02-on-status-02))",
-      "status-02-container-default": "hsla(var(--status-02-container-default))",
-      "status-02-container-soft": "hsla(var(--status-02-container-soft))",
-      "status-02-container-muted": "hsla(var(--status-02-container-muted))",
-      "status-02-container-hover": "hsla(var(--status-02-container-hover))",
-      "status-02-container-active": "hsla(var(--status-02-container-active))",
-      "status-02-on-container": "hsla(var(--status-02-on-container))",
-      "status-03-default": "hsla(var(--status-03-default))",
-      "status-03-soft": "hsla(var(--status-03-soft))",
-      "status-03-muted": "hsla(var(--status-03-muted))",
-      "status-03-hover": "hsla(var(--status-03-hover))",
-      "status-03-active": "hsla(var(--status-03-active))",
-      "status-03-on-status-03": "hsla(var(--status-03-on-status-03))",
-      "status-03-container-default": "hsla(var(--status-03-container-default))",
-      "status-03-container-soft": "hsla(var(--status-03-container-soft))",
-      "status-03-container-muted": "hsla(var(--status-03-container-muted))",
-      "status-03-container-hover": "hsla(var(--status-03-container-hover))",
-      "status-03-container-active": "hsla(var(--status-03-container-active))",
-      "status-03-on-container": "hsla(var(--status-03-on-container))",
-      "status-04-default": "hsla(var(--status-04-default))",
-      "status-04-soft": "hsla(var(--status-04-soft))",
-      "status-04-muted": "hsla(var(--status-04-muted))",
-      "status-04-hover": "hsla(var(--status-04-hover))",
-      "status-04-active": "hsla(var(--status-04-active))",
-      "status-04-on-status-04": "hsla(var(--status-04-on-status-04))",
-      "status-04-container-default": "hsla(var(--status-04-container-default))",
-      "status-04-container-soft": "hsla(var(--status-04-container-soft))",
-      "status-04-container-muted": "hsla(var(--status-04-container-muted))",
-      "status-04-container-hover": "hsla(var(--status-04-container-hover))",
-      "status-04-container-active": "hsla(var(--status-04-container-active))",
-      "status-04-on-container": "hsla(var(--status-04-on-container))",
-      "status-05-default": "hsla(var(--status-05-default))",
-      "status-05-soft": "hsla(var(--status-05-soft))",
-      "status-05-muted": "hsla(var(--status-05-muted))",
-      "status-05-hover": "hsla(var(--status-05-hover))",
-      "status-05-active": "hsla(var(--status-05-active))",
-      "status-05-on-status-05": "hsla(var(--status-05-on-status-05))",
-      "status-05-container-default": "hsla(var(--status-05-container-default))",
-      "status-05-container-soft": "hsla(var(--status-05-container-soft))",
-      "status-05-container-muted": "hsla(var(--status-05-container-muted))",
-      "status-05-container-hover": "hsla(var(--status-05-container-hover))",
-      "status-05-container-active": "hsla(var(--status-05-container-active))",
-      "status-05-on-container": "hsla(var(--status-05-on-container))",
-      "status-06-default": "hsla(var(--status-06-default))",
-      "status-06-soft": "hsla(var(--status-06-soft))",
-      "status-06-muted": "hsla(var(--status-06-muted))",
-      "status-06-hover": "hsla(var(--status-06-hover))",
-      "status-06-active": "hsla(var(--status-06-active))",
-      "status-06-on-status-06": "hsla(var(--status-06-on-status-06))",
-      "status-06-container-default": "hsla(var(--status-06-container-default))",
-      "status-06-container-soft": "hsla(var(--status-06-container-soft))",
-      "status-06-container-muted": "hsla(var(--status-06-container-muted))",
-      "status-06-container-hover": "hsla(var(--status-06-container-hover))",
-      "status-06-container-active": "hsla(var(--status-06-container-active))",
-      "status-06-on-container": "hsla(var(--status-06-on-container))",
+      "status-01": {
+        DEFAULT: "hsla(var(--status-01-default))",
+        soft: "hsla(var(--status-01-soft))",
+        muted: "hsla(var(--status-01-muted))",
+        hover: "hsla(var(--status-01-hover))",
+        active: "hsla(var(--status-01-active))",
+        container: "hsla(var(--status-01-container-default))",
+        "container-soft": "hsla(var(--status-01-container-soft))",
+        "container-muted": "hsla(var(--status-01-container-muted))",
+        "container-hover": "hsla(var(--status-01-container-hover))",
+        "container-active": "hsla(var(--status-01-container-active))",
+        "on-container": "hsla(var(--status-01-on-container))",
+        "on-status-01": "hsla(var(--status-01-on-status-01))",
+      },
+      "status-02": {
+        DEFAULT: "hsla(var(--status-02-default))",
+        soft: "hsla(var(--status-02-soft))",
+        muted: "hsla(var(--status-02-muted))",
+        hover: "hsla(var(--status-02-hover))",
+        active: "hsla(var(--status-02-active))",
+        container: "hsla(var(--status-02-container-default))",
+        "container-soft": "hsla(var(--status-02-container-soft))",
+        "container-muted": "hsla(var(--status-02-container-muted))",
+        "container-hover": "hsla(var(--status-02-container-hover))",
+        "container-active": "hsla(var(--status-02-container-active))",
+        "on-container": "hsla(var(--status-02-on-container))",
+        "on-status-02": "hsla(var(--status-02-on-status-02))",
+      },
+      "status-03": {
+        DEFAULT: "hsla(var(--status-03-default))",
+        soft: "hsla(var(--status-03-soft))",
+        muted: "hsla(var(--status-03-muted))",
+        hover: "hsla(var(--status-03-hover))",
+        active: "hsla(var(--status-03-active))",
+        container: "hsla(var(--status-03-container-default))",
+        "container-soft": "hsla(var(--status-03-container-soft))",
+        "container-muted": "hsla(var(--status-03-container-muted))",
+        "container-hover": "hsla(var(--status-03-container-hover))",
+        "container-active": "hsla(var(--status-03-container-active))",
+        "on-container": "hsla(var(--status-03-on-container))",
+        "on-status-03": "hsla(var(--status-03-on-status-03))",
+      },
+      "status-04": {
+        DEFAULT: "hsla(var(--status-04-default))",
+        soft: "hsla(var(--status-04-soft))",
+        muted: "hsla(var(--status-04-muted))",
+        hover: "hsla(var(--status-04-hover))",
+        active: "hsla(var(--status-04-active))",
+        container: "hsla(var(--status-04-container-default))",
+        "container-soft": "hsla(var(--status-04-container-soft))",
+        "container-muted": "hsla(var(--status-04-container-muted))",
+        "container-hover": "hsla(var(--status-04-container-hover))",
+        "container-active": "hsla(var(--status-04-container-active))",
+        "on-container": "hsla(var(--status-04-on-container))",
+        "on-status-04": "hsla(var(--status-04-on-status-04))",
+      },
+      "status-05": {
+        DEFAULT: "hsla(var(--status-05-default))",
+        soft: "hsla(var(--status-05-soft))",
+        muted: "hsla(var(--status-05-muted))",
+        hover: "hsla(var(--status-05-hover))",
+        active: "hsla(var(--status-05-active))",
+        container: "hsla(var(--status-05-container-default))",
+        "container-soft": "hsla(var(--status-05-container-soft))",
+        "container-muted": "hsla(var(--status-05-container-muted))",
+        "container-hover": "hsla(var(--status-05-container-hover))",
+        "container-active": "hsla(var(--status-05-container-active))",
+        "on-container": "hsla(var(--status-05-on-container))",
+        "on-status-05": "hsla(var(--status-05-on-status-05))",
+      },
+      "status-06": {
+        DEFAULT: "hsla(var(--status-06-default))",
+        soft: "hsla(var(--status-06-soft))",
+        muted: "hsla(var(--status-06-muted))",
+        hover: "hsla(var(--status-06-hover))",
+        active: "hsla(var(--status-06-active))",
+        container: "hsla(var(--status-06-container-default))",
+        "container-soft": "hsla(var(--status-06-container-soft))",
+        "container-muted": "hsla(var(--status-06-container-muted))",
+        "container-hover": "hsla(var(--status-06-container-hover))",
+        "container-active": "hsla(var(--status-06-container-active))",
+        "on-container": "hsla(var(--status-06-on-container))",
+        "on-status-06": "hsla(var(--status-06-on-status-06))",
+      },
       static: {
         white: "hsla(var(--static-white))",
         black: "hsla(var(--static-black))",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addComponents }) {
+      addComponents({
+        ".display-large": {
+          "@apply text-[3rem] leading-[3.25rem] font-medium text-fg": {},
+        },
+
+        ".display-large-strong": {
+          "@apply text-[3rem] leading-[3.25rem] font-bold text-fg": {},
+        },
+
+        ".display-medium": {
+          "@apply text-[2.625rem] leading-[2.75rem] font-medium text-fg": {},
+        },
+
+        ".display-medium-strong": {
+          "@apply text-[2.625rem] leading-[2.75rem] font-bold text-fg": {},
+        },
+
+        ".display-small": {
+          "@apply text-[2rem] leading-[2.75rem] font-medium text-fg": {},
+        },
+
+        ".display-small-strong": {
+          "@apply text-[2rem] leading-[2.75rem] font-bold text-fg": {},
+        },
+
+        ".heading-1": {
+          "@apply text-[1.75rem] leading-[2rem] font-bold text-fg": {},
+        },
+
+        ".heading-2": {
+          "@apply text-[1.375rem] leading-[1.5rem] font-bold text-fg": {},
+        },
+
+        ".heading-3": {
+          "@apply text-[1.125rem] leading-[1.25rem] font-bold text-fg": {},
+        },
+
+        ".heading-4": {
+          "@apply text-[1rem] leading-[1.25rem] font-bold text-fg": {},
+        },
+
+        ".heading-5": {
+          "@apply text-[0.875rem] leading-[1.25rem] font-bold text-fg": {},
+        },
+
+        ".body-large": {
+          "@apply text-[1.125rem] leading-[1.625rem] font-normal text-fg": {},
+        },
+
+        ".body-large-strong": {
+          "@apply text-[1.125rem] leading-[1.625rem] font-medium text-fg": {},
+        },
+
+        ".body-medium": {
+          "@apply text-[1rem] leading-[1.5rem] font-normal text-fg": {},
+        },
+
+        ".body-medium-strong": {
+          "@apply text-[1rem] leading-[1.5rem] font-medium text-fg": {},
+        },
+
+        ".body-small": {
+          "@apply text-[0.875rem] leading-[1.25rem] font-normal text-fg": {},
+        },
+
+        ".body-small-strong": {
+          "@apply text-[0.875rem] leading-[1.25rem] font-medium text-fg": {},
+        },
+
+        ".description-large": {
+          "@apply text-[0.75rem] leading-[1rem] font-normal text-fg": {},
+        },
+
+        ".description-large-strong": {
+          "@apply text-[0.75rem] leading-[1rem] font-medium text-fg": {},
+        },
+
+        ".description-medium": {
+          "@apply text-[0.688rem] leading-[1rem] tracking-[0.0125rem] font-normal text-fg":
+            {},
+        },
+
+        ".description-medium-strong": {
+          "@apply text-[0.688rem] leading-[1rem] tracking-[0.0125rem] font-medium text-fg":
+            {},
+        },
+
+        ".description-small": {
+          "@apply text-[0.625rem] leading-[0.75rem] tracking-[0.025rem] font-normal text-fg":
+            {},
+        },
+
+        ".description-small-strong": {
+          "@apply text-[0.625rem] leading-[0.75rem] tracking-[0.025rem] font-medium text-fg":
+            {},
+        },
+      });
+    }),
+  ],
 };
