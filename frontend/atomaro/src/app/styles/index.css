@@ -767,7 +767,7 @@
     --static-black: 220, 24%, 7%, 1;
   }
 
-  .dark-theme {
+  .dark {
     --base-neutral: 220, 25%, 35%, 1;
 
     --base-accent: 220, 100%, 50%, 1;
@@ -1200,331 +1200,331 @@
 
     --status-06-0: 0, 0%, 100%, 1;
 
-    --fg-default: 220, 24%, 7%, 1;
+    --fg-default: 216, 15%, 94%, 1;
 
-    --fg-soft: 220, 25%, 35%, 1;
+    --fg-soft: 219, 14%, 68%, 1;
 
     --fg-muted: 220, 14%, 58%, 1;
 
-    --fg-disabled: 220, 25%, 35%, 0.5;
+    --fg-disabled: 219, 14%, 68%, 0.5;
 
-    --bg-surface1: 0, 0%, 100%, 1;
+    --bg-surface1: 221, 25%, 13%, 1;
 
-    --bg-surface2: 210, 20%, 98%, 1;
+    --bg-surface2: 219, 26%, 15%, 1;
 
-    --bg-surface3: 240, 12%, 97%, 1;
+    --bg-surface3: 219, 25%, 18%, 1;
 
-    --bg-surface4: 216, 15%, 94%, 1;
+    --bg-surface4: 220, 25%, 21%, 1;
 
-    --bg-surface5: 220, 15%, 84%, 1;
+    --bg-surface5: 221, 24%, 25%, 1;
 
-    --bg-page: 0, 0%, 100%, 1;
+    --bg-page: 221, 25%, 13%, 1;
 
-    --bg-disabled: 220, 25%, 35%, 0.1;
+    --bg-disabled: 219, 14%, 68%, 0.1;
 
-    --bg-elevated-0: 0, 0%, 100%, 1;
+    --bg-elevated-0: 221, 25%, 13%, 1;
 
-    --bg-elevated-s: 0, 0%, 100%, 1;
+    --bg-elevated-s: 219, 26%, 15%, 1;
 
-    --bg-elevated-m: 0, 0%, 100%, 1;
+    --bg-elevated-m: 219, 25%, 18%, 1;
 
-    --bg-elevated-l: 0, 0%, 100%, 1;
+    --bg-elevated-l: 220, 25%, 21%, 1;
 
-    --bg-elevated-xl: 0, 0%, 100%, 1;
+    --bg-elevated-xl: 221, 24%, 25%, 1;
 
-    --border-default: 220, 25%, 35%, 0.5;
+    --border-default: 219, 14%, 68%, 0.1;
 
-    --border-soft: 220, 25%, 35%, 0.25;
+    --border-soft: 219, 14%, 68%, 0.08;
 
-    --border-muted: 220, 25%, 35%, 0.15;
+    --border-muted: 219, 14%, 68%, 0.04;
 
-    --accent-default: 220, 100%, 50%, 1;
+    --accent-default: 220, 100%, 75%, 1;
 
-    --accent-soft: 220, 100%, 60%, 1;
+    --accent-soft: 220, 100%, 67%, 1;
 
-    --accent-muted: 220, 100%, 75%, 1;
+    --accent-muted: 220, 100%, 60%, 1;
 
-    --accent-hover: 220, 100%, 43%, 1;
+    --accent-hover: 220, 100%, 87%, 1;
 
-    --accent-active: 220, 100%, 35%, 1;
+    --accent-active: 221, 100%, 95%, 1;
 
-    --accent-on-accent: 0, 0%, 100%, 1;
+    --accent-on-accent: 220, 100%, 17%, 1;
 
-    --accent-container-default: 220, 100%, 50%, 0.1;
+    --accent-container-default: 220, 100%, 60%, 0.2;
 
-    --accent-container-soft: 220, 100%, 50%, 0.05;
+    --accent-container-soft: 220, 100%, 60%, 0.1;
 
-    --accent-container-muted: 220, 100%, 50%, 0.03;
+    --accent-container-muted: 220, 100%, 60%, 0.05;
 
-    --accent-container-hover: 220, 100%, 50%, 0.2;
+    --accent-container-hover: 220, 100%, 60%, 0.3;
 
-    --accent-container-active: 220, 100%, 50%, 0.3;
+    --accent-container-active: 220, 100%, 60%, 0.4;
 
-    --accent-on-container: 220, 100%, 50%, 1;
+    --accent-on-container: 220, 100%, 75%, 1;
 
-    --neutral-default: 220, 25%, 35%, 1;
+    --neutral-default: 219, 14%, 68%, 1;
 
-    --neutral-soft: 220, 15%, 48%, 1;
+    --neutral-soft: 220, 14%, 58%, 1;
 
-    --neutral-muted: 221, 13%, 68%, 1;
+    --neutral-muted: 221, 15%, 48%, 1;
 
-    --neutral-hover: 219, 25%, 30%, 1;
+    --neutral-hover: 220, 15%, 84%, 1;
 
-    --neutral-active: 221, 24%, 25%, 1;
+    --neutral-active: 216, 15%, 94%, 1;
 
-    --neutral-on-neutral: 0, 0%, 100%, 1;
+    --neutral-on-neutral: 221, 25%, 13%, 1;
 
-    --neutral-container-default: 220, 25%, 35%, 0.1;
+    --neutral-container-default: 221, 15%, 48%, 0.2;
 
-    --neutral-container-soft: 220, 25%, 35%, 0.05;
+    --neutral-container-soft: 221, 15%, 48%, 0.1;
 
-    --neutral-container-muted: 220, 25%, 35%, 0.03;
+    --neutral-container-muted: 221, 15%, 48%, 0.05;
 
-    --neutral-container-hover: 220, 25%, 35%, 0.2;
+    --neutral-container-hover: 221, 15%, 48%, 0.3;
 
-    --neutral-container-active: 220, 25%, 35%, 0.3;
+    --neutral-container-active: 221, 15%, 48%, 0.4;
 
-    --neutral-on-container: 220, 25%, 35%, 1;
+    --neutral-on-container: 219, 14%, 68%, 1;
 
-    --success-default: 142, 99%, 31%, 1;
+    --success-default: 143, 45%, 66%, 1;
 
-    --success-soft: 142, 55%, 45%, 1;
+    --success-soft: 142, 45%, 55%, 1;
 
-    --success-muted: 143, 45%, 66%, 1;
+    --success-muted: 142, 55%, 45%, 1;
 
-    --success-hover: 142, 99%, 27%, 1;
+    --success-hover: 142, 45%, 83%, 1;
 
-    --success-active: 142, 98%, 22%, 1;
+    --success-active: 144, 43%, 93%, 1;
 
-    --success-on-success: 0, 0%, 100%, 1;
+    --success-on-success: 142, 100%, 11%, 1;
 
-    --success-container-default: 142, 99%, 31%, 0.1;
+    --success-container-default: 142, 55%, 45%, 0.2;
 
-    --success-container-soft: 142, 99%, 31%, 0.05;
+    --success-container-soft: 142, 55%, 45%, 0.1;
 
-    --success-container-muted: 142, 99%, 31%, 0.03;
+    --success-container-muted: 142, 55%, 45%, 0.05;
 
-    --success-container-hover: 142, 99%, 31%, 0.2;
+    --success-container-hover: 142, 55%, 45%, 0.3;
 
-    --success-container-active: 142, 99%, 31%, 0.3;
+    --success-container-active: 142, 55%, 45%, 0.4;
 
-    --success-on-container: 142, 99%, 31%, 1;
+    --success-on-container: 143, 45%, 66%, 1;
 
-    --warning-default: 36, 100%, 47%, 1;
+    --warning-default: 36, 91%, 74%, 1;
 
-    --warning-soft: 36, 91%, 58%, 1;
+    --warning-soft: 36, 91%, 66%, 1;
 
-    --warning-muted: 36, 91%, 74%, 1;
+    --warning-muted: 36, 91%, 58%, 1;
 
-    --warning-hover: 36, 100%, 40%, 1;
+    --warning-hover: 35, 91%, 87%, 1;
 
-    --warning-active: 36, 100%, 33%, 1;
+    --warning-active: 35, 92%, 95%, 1;
 
     --warning-on-warning: 36, 100%, 9%, 1;
 
-    --warning-container-default: 36, 100%, 47%, 0.1;
+    --warning-container-default: 36, 91%, 58%, 0.2;
 
-    --warning-container-soft: 36, 100%, 47%, 0.05;
+    --warning-container-soft: 36, 91%, 58%, 0.1;
 
-    --warning-container-muted: 36, 100%, 47%, 0.03;
+    --warning-container-muted: 36, 91%, 58%, 0.05;
 
-    --warning-container-hover: 36, 100%, 47%, 0.2;
+    --warning-container-hover: 36, 91%, 58%, 0.3;
 
-    --warning-container-active: 36, 100%, 47%, 0.3;
+    --warning-container-active: 36, 91%, 58%, 0.4;
 
-    --warning-on-container: 36, 100%, 40%, 1;
+    --warning-on-container: 36, 91%, 74%, 1;
 
-    --error-default: 354, 82%, 47%, 1;
+    --error-default: 354, 72%, 73%, 1;
 
-    --error-soft: 354, 72%, 57%, 1;
+    --error-soft: 354, 72%, 65%, 1;
 
-    --error-muted: 354, 72%, 73%, 1;
+    --error-muted: 354, 72%, 57%, 1;
 
-    --error-hover: 354, 82%, 40%, 1;
+    --error-hover: 355, 73%, 87%, 1;
 
-    --error-active: 354, 82%, 33%, 1;
+    --error-active: 354, 70%, 95%, 1;
 
-    --error-on-error: 0, 0%, 100%, 1;
+    --error-on-error: 354, 83%, 16%, 1;
 
-    --error-container-default: 354, 82%, 47%, 0.1;
+    --error-container-default: 354, 72%, 57%, 0.2;
 
-    --error-container-soft: 354, 82%, 47%, 0.05;
+    --error-container-soft: 354, 72%, 57%, 0.1;
 
-    --error-container-muted: 354, 82%, 47%, 0.03;
+    --error-container-muted: 354, 72%, 57%, 0.05;
 
-    --error-container-hover: 354, 82%, 47%, 0.2;
+    --error-container-hover: 354, 72%, 57%, 0.3;
 
-    --error-container-active: 354, 82%, 47%, 0.3;
+    --error-container-active: 354, 72%, 57%, 0.4;
 
-    --error-on-container: 354, 82%, 47%, 1;
+    --error-on-container: 354, 72%, 73%, 1;
 
-    --info-default: 207, 100%, 55%, 1;
+    --info-default: 207, 100%, 77%, 1;
 
-    --info-soft: 207, 100%, 64%, 1;
+    --info-soft: 207, 100%, 71%, 1;
 
-    --info-muted: 207, 100%, 77%, 1;
+    --info-muted: 207, 100%, 64%, 1;
 
-    --info-hover: 207, 82%, 47%, 1;
+    --info-hover: 207, 100%, 89%, 1;
 
-    --info-active: 207, 82%, 39%, 1;
+    --info-active: 206, 100%, 95%, 1;
 
-    --info-on-info: 0, 0%, 100%, 1;
+    --info-on-info: 207, 82%, 19%, 1;
 
-    --info-container-default: 207, 100%, 55%, 0.1;
+    --info-container-default: 207, 100%, 64%, 0.2;
 
-    --info-container-soft: 207, 100%, 55%, 0.05;
+    --info-container-soft: 207, 100%, 64%, 0.1;
 
-    --info-container-muted: 207, 100%, 55%, 0.03;
+    --info-container-muted: 207, 100%, 64%, 0.05;
 
-    --info-container-hover: 207, 100%, 55%, 0.2;
+    --info-container-hover: 207, 100%, 64%, 0.3;
 
-    --info-container-active: 207, 100%, 55%, 0.3;
+    --info-container-active: 207, 100%, 64%, 0.4;
 
-    --info-on-container: 207, 100%, 55%, 1;
+    --info-on-container: 207, 100%, 77%, 1;
 
-    --status-01-default: 166, 100%, 35%, 1;
+    --status-01-default: 166, 53%, 67%, 1;
 
-    --status-01-soft: 166, 58%, 48%, 1;
+    --status-01-soft: 166, 54%, 58%, 1;
 
-    --status-01-muted: 165, 54%, 68%, 1;
+    --status-01-muted: 166, 58%, 48%, 1;
 
-    --status-01-hover: 166, 100%, 30%, 1;
+    --status-01-hover: 165, 54%, 84%, 1;
 
-    --status-01-active: 166, 100%, 25%, 1;
+    --status-01-active: 166, 52%, 94%, 1;
 
-    --status-01-on-status-01: 0, 0%, 100%, 1;
+    --status-01-on-status-01: 166, 100%, 12%, 1;
 
-    --status-01-container-default: 166, 100%, 35%, 0.1;
+    --status-01-container-default: 166, 58%, 48%, 0.2;
 
-    --status-01-container-soft: 166, 100%, 35%, 0.05;
+    --status-01-container-soft: 166, 58%, 48%, 0.1;
 
-    --status-01-container-muted: 166, 100%, 35%, 0.03;
+    --status-01-container-muted: 166, 58%, 48%, 0.05;
 
-    --status-01-container-hover: 166, 100%, 35%, 0.2;
+    --status-01-container-hover: 166, 58%, 48%, 0.3;
 
-    --status-01-container-active: 166, 100%, 35%, 0.3;
+    --status-01-container-active: 166, 58%, 48%, 0.4;
 
-    --status-01-on-container: 166, 100%, 35%, 1;
+    --status-01-on-container: 166, 53%, 67%, 1;
 
-    --status-02-default: 194, 83%, 40%, 1;
+    --status-02-default: 195, 56%, 70%, 1;
 
-    --status-02-soft: 195, 56%, 52%, 1;
+    --status-02-soft: 195, 56%, 61%, 1;
 
-    --status-02-muted: 194, 56%, 70%, 1;
+    --status-02-muted: 195, 56%, 52%, 1;
 
-    --status-02-hover: 194, 84%, 34%, 1;
+    --status-02-hover: 194, 55%, 85%, 1;
 
-    --status-02-active: 195, 83%, 28%, 1;
+    --status-02-active: 194, 55%, 94%, 1;
 
-    --status-02-on-status-02: 0, 0%, 100%, 1;
+    --status-02-on-status-02: 195, 83%, 14%, 1;
 
-    --status-02-container-default: 194, 83%, 40%, 0.1;
+    --status-02-container-default: 195, 56%, 52%, 0.2;
 
-    --status-02-container-soft: 194, 83%, 40%, 0.05;
+    --status-02-container-soft: 195, 56%, 52%, 0.1;
 
-    --status-02-container-muted: 194, 83%, 40%, 0.03;
+    --status-02-container-muted: 195, 56%, 52%, 0.05;
 
-    --status-02-container-hover: 194, 83%, 40%, 0.2;
+    --status-02-container-hover: 195, 56%, 52%, 0.3;
 
-    --status-02-container-active: 194, 83%, 40%, 0.3;
+    --status-02-container-active: 195, 56%, 52%, 0.4;
 
-    --status-02-on-container: 194, 83%, 40%, 1;
+    --status-02-on-container: 195, 56%, 70%, 1;
 
-    --status-03-default: 248, 89%, 64%, 1;
+    --status-03-default: 248, 89%, 82%, 1;
 
-    --status-03-soft: 248, 89%, 71%, 1;
+    --status-03-soft: 248, 90%, 77%, 1;
 
-    --status-03-muted: 248, 89%, 82%, 1;
+    --status-03-muted: 248, 89%, 71%, 1;
 
-    --status-03-hover: 248, 59%, 55%, 1;
+    --status-03-hover: 249, 87%, 91%, 1;
 
-    --status-03-active: 249, 50%, 45%, 1;
+    --status-03-active: 248, 89%, 96%, 1;
 
-    --status-03-on-status-03: 0, 0%, 100%, 1;
+    --status-03-on-status-03: 248, 50%, 23%, 1;
 
-    --status-03-container-default: 248, 89%, 64%, 0.1;
+    --status-03-container-default: 248, 89%, 71%, 0.2;
 
-    --status-03-container-soft: 248, 89%, 64%, 0.05;
+    --status-03-container-soft: 248, 89%, 71%, 0.1;
 
-    --status-03-container-muted: 248, 89%, 64%, 0.03;
+    --status-03-container-muted: 248, 89%, 71%, 0.05;
 
-    --status-03-container-hover: 248, 89%, 64%, 0.2;
+    --status-03-container-hover: 248, 89%, 71%, 0.3;
 
-    --status-03-container-active: 248, 89%, 64%, 0.3;
+    --status-03-container-active: 248, 89%, 71%, 0.4;
 
-    --status-03-on-container: 248, 89%, 64%, 1;
+    --status-03-on-container: 248, 89%, 82%, 1;
 
-    --status-04-default: 272, 100%, 57%, 1;
+    --status-04-default: 272, 100%, 79%, 1;
 
-    --status-04-soft: 272, 100%, 66%, 1;
+    --status-04-soft: 272, 100%, 72%, 1;
 
-    --status-04-muted: 272, 100%, 79%, 1;
+    --status-04-muted: 272, 100%, 66%, 1;
 
-    --status-04-hover: 272, 75%, 49%, 1;
+    --status-04-hover: 273, 100%, 89%, 1;
 
-    --status-04-active: 272, 75%, 40%, 1;
+    --status-04-active: 273, 100%, 96%, 1;
 
-    --status-04-on-status-04: 0, 0%, 100%, 1;
+    --status-04-on-status-04: 272, 75%, 20%, 1;
 
-    --status-04-container-default: 272, 100%, 57%, 0.1;
+    --status-04-container-default: 272, 100%, 66%, 0.2;
 
-    --status-04-container-soft: 272, 100%, 57%, 0.05;
+    --status-04-container-soft: 272, 100%, 66%, 0.1;
 
-    --status-04-container-muted: 272, 100%, 57%, 0.03;
+    --status-04-container-muted: 272, 100%, 66%, 0.05;
 
-    --status-04-container-hover: 272, 100%, 57%, 0.2;
+    --status-04-container-hover: 272, 100%, 66%, 0.3;
 
-    --status-04-container-active: 272, 100%, 57%, 0.3;
+    --status-04-container-active: 272, 100%, 66%, 0.4;
 
-    --status-04-on-container: 272, 100%, 57%, 1;
+    --status-04-on-container: 272, 100%, 79%, 1;
 
-    --status-05-default: 334, 75%, 56%, 1;
+    --status-05-default: 334, 75%, 78%, 1;
 
-    --status-05-soft: 334, 76%, 65%, 1;
+    --status-05-soft: 334, 75%, 71%, 1;
 
-    --status-05-muted: 334, 75%, 78%, 1;
+    --status-05-muted: 334, 76%, 65%, 1;
 
-    --status-05-hover: 335, 60%, 47%, 1;
+    --status-05-hover: 334, 75%, 89%, 1;
 
-    --status-05-active: 335, 59%, 39%, 1;
+    --status-05-active: 332, 74%, 95%, 1;
 
-    --status-05-on-status-05: 0, 0%, 100%, 1;
+    --status-05-on-status-05: 335, 60%, 20%, 1;
 
-    --status-05-container-default: 334, 75%, 56%, 0.1;
+    --status-05-container-default: 334, 76%, 65%, 0.2;
 
-    --status-05-container-soft: 334, 75%, 56%, 0.05;
+    --status-05-container-soft: 334, 76%, 65%, 0.1;
 
-    --status-05-container-muted: 334, 75%, 56%, 0.03;
+    --status-05-container-muted: 334, 76%, 65%, 0.05;
 
-    --status-05-container-hover: 334, 75%, 56%, 0.2;
+    --status-05-container-hover: 334, 76%, 65%, 0.3;
 
-    --status-05-container-active: 334, 75%, 56%, 0.3;
+    --status-05-container-active: 334, 76%, 65%, 0.4;
 
-    --status-05-on-container: 334, 75%, 56%, 1;
+    --status-05-on-container: 334, 75%, 78%, 1;
 
-    --status-06-default: 20, 100%, 49%, 1;
+    --status-06-default: 20, 95%, 75%, 1;
 
-    --status-06-soft: 20, 96%, 59%, 1;
+    --status-06-soft: 20, 96%, 67%, 1;
 
-    --status-06-muted: 20, 97%, 75%, 1;
+    --status-06-muted: 20, 96%, 59%, 1;
 
-    --status-06-hover: 20, 100%, 42%, 1;
+    --status-06-hover: 20, 97%, 87%, 1;
 
-    --status-06-active: 20, 100%, 34%, 1;
+    --status-06-active: 20, 92%, 95%, 1;
 
-    --status-06-on-status-06: 0, 0%, 100%, 1;
+    --status-06-on-status-06: 20, 100%, 17%, 1;
 
-    --status-06-container-default: 20, 100%, 49%, 0.1;
+    --status-06-container-default: 20, 96%, 59%, 0.2;
 
-    --status-06-container-soft: 20, 100%, 49%, 0.05;
+    --status-06-container-soft: 20, 96%, 59%, 0.1;
 
-    --status-06-container-muted: 20, 100%, 49%, 0.03;
+    --status-06-container-muted: 20, 96%, 59%, 0.05;
 
-    --status-06-container-hover: 20, 100%, 49%, 0.2;
+    --status-06-container-hover: 20, 96%, 59%, 0.3;
 
-    --status-06-container-active: 20, 100%, 49%, 0.3;
+    --status-06-container-active: 20, 96%, 59%, 0.4;
 
-    --status-06-on-container: 20, 100%, 49%, 1;
+    --status-06-on-container: 20, 95%, 75%, 1;
 
     --static-white: 0, 0%, 100%, 1;
 
