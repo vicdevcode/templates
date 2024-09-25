@@ -4,9 +4,190 @@ export default {
   content: ["./index.html", "./src/**/*.{tsx,ts,jsx,js}"],
   theme: {
     extend: {
-      fontFamily: {
-        inter: ["Inter", "sans-serif"],
+      spacing: {
+        base: "var(--spacing-base)",
+        none: "var(--spacing-base)",
+        px: "var(--spacing-px)",
+        "0.5px": "var(--spacing-0-5x)",
+        "1x": "var(--spacing-1x)",
+        "1.5px": "var(--spacing-1-5x)",
+        "2x": "var(--spacing-2x)",
+        "3x": "var(--spacing-3x)",
+        "4x": "var(--spacing-4x)",
+        "5x": "var(--spacing-5x)",
+        "6x": "var(--spacing-6x)",
+        "8x": "var(--spacing-8x)",
+        "10x": "var(--spacing-10x)",
+        "12x": "var(--spacing-12x)",
+        "16x": "var(--spacing-16x)",
+        "20x": "var(--spacing-20x)",
+        "24x": "var(--spacing-24x)",
+        "32x": "var(--spacing-32x)",
+        "48x": "var(--spacing-48x)",
       },
+      size: {
+        base: "var(--size-base)",
+        xl: "var(--size-xl)",
+        l: "var(--size-l)",
+        m: "var(--size-m)",
+        "m-chip": "var(--size-m-chip)",
+        "m-tag": "var(--size-m-tag)",
+        s: "var(--size-s)",
+        xs: "var(--size-xs)",
+        "2xs": "var(--size-2xs)",
+      },
+    },
+    borderRadius: {
+      base: "var(--border-radius-base)",
+      none: "var(--border-radius-none)",
+      full: "var(--border-radius-full)",
+      "2xs": "var(--border-radius-2xs)",
+      xs: "var(--border-radius-xs)",
+      s: "var(--border-radius-s)",
+      m: "var(--border-radius-m)",
+      l: "var(--border-radius-l)",
+      xl: "var(--border-radius-xl)",
+      "2xl": "var(--border-radius-2xl)",
+      inputs: "var(--border-radius-inputs)",
+      buttons: "var(--border-radius-buttons)",
+      controls: "var(--border-radius-controls)",
+    },
+    borderWidth: {
+      none: "var(--border-width-none)",
+      s: "var(--border-width-s)",
+      m: "var(--border-width-m)",
+      l: "var(--border-width-l)",
+      inputs: "var(--border-width-inputs)",
+      buttons: "var(--border-width-buttons)",
+      controls: "var(--border-width-controls)",
+      dividers: "var(--border-width-dividers)",
+    },
+    screens: {
+      "2xs": "var(--breakpoint-2xs)",
+      xs: "var(--breakpoint-xs)",
+      s: "var(--breakpoint-s)",
+      m: "var(--breakpoint-m)",
+      l: "var(--breakpoint-l)",
+      xl: "var(--breakpoint-xl)",
+    },
+    zIndex: {
+      hide: "var(--z-index-hide)",
+      default: "var(--z-index-default)",
+      dropdown: "var(--z-index-dropdown)",
+      sticky: "var(--z-index-sticky)",
+      fab: "var(--z-index-fab)",
+      overlay: "var(--z-index-overlay)",
+      loader: "var(--z-index-loader)",
+      modal: "var(--z-index-modal)",
+      toast: "var(--z-index-toast)",
+      popover: "var(--z-index-popover)",
+      tooltip: "var(--z-index-tooltip)",
+    },
+    transitionDuration: {
+      "2xs": "var(--motion-duration-2xs)",
+      xs: "var(--motion-duration-xs)",
+      s: "var(--motion-duration-s)",
+      m: "var(--motion-duration-m)",
+      l: "var(--motion-duration-l)",
+      xl: "var(--motion-duration-xl)",
+    },
+    transitionTimingFunction: {
+      linear: "var(--motion-easing-linear)",
+      "productive-standart": "var(--motion-easing-productive-standart)",
+      "productive-entrance": "var(--motion-easing-productive-entrance)",
+      "productive-exit": "var(--motion-easing-productive-exit)",
+      "productive-bouncing": "var(--motion-easing-productive-bouncing)",
+      "expressive-standart": "var(--motion-easing-expressive-standart)",
+      "expressive-entrance": "var(--motion-easing-expressive-entrance)",
+      "expressive-exit": "var(--motion-easing-expressive-exit)",
+      "expressive-bouncing": "var(--motion-easing-expressive-bouncing)",
+    },
+    fontWeight: {
+      "weight-display": "var(--font-weight-display)",
+      "weight-display-strong": "var(--font-weight-display-strong)",
+      "weight-heading": "var(--font-weight-heading)",
+      "weight-body": "var(--font-weight-body)",
+      "weight-body-strong": "var(--font-weight-body-strong)",
+      "weight-description": "var(--font-weight-description)",
+      "weight-description-strong": "var(--font-weight-description-strong)",
+    },
+    letterSpacing: {
+      "description-m": "var(--font-letter-spacing-description-m)",
+      "description-s": "var(--font-letter-spacing-description-s)",
+    },
+    fontSize: {
+      base: ["var(--font-size-base)", "var(--font-line-height-base)"],
+      "display-l": [
+        "var(--font-size-display-l)",
+        "var(--font-line-height-display-l)",
+      ],
+      "display-m": [
+        "var(--font-size-display-m)",
+        "var(--font-line-height-display-m)",
+      ],
+      "display-s": [
+        "var(--font-size-display-s)",
+        "var(--font-line-height-display-s)",
+      ],
+      "heading-1": [
+        "var(--font-size-heading-h1)",
+        "var(--font-line-height-heading-h1)",
+      ],
+      "heading-2": [
+        "var(--font-size-heading-h2)",
+        "var(--font-line-height-heading-h2)",
+      ],
+      "heading-3": [
+        "var(--font-size-heading-h3)",
+        "var(--font-line-height-heading-h3)",
+      ],
+      "heading-4": [
+        "var(--font-size-heading-h4)",
+        "var(--font-line-height-heading-h4)",
+      ],
+      "heading-5": [
+        "var(--font-size-heading-h5)",
+        "var(--font-line-height-heading-h5)",
+      ],
+      "body-l": ["var(--font-size-body-l)", "var(--font-line-height-body-l)"],
+      "body-m": ["var(--font-size-body-m)", "var(--font-line-height-body-m)"],
+      "body-s": ["var(--font-size-body-s)", "var(--font-line-height-body-s)"],
+      "description-l": [
+        "var(--font-size-description-l)",
+        "var(--font-line-height-description-l)",
+      ],
+      "description-m": [
+        "var(--font-size-description-m)",
+        "var(--font-line-height-description-m)",
+      ],
+      "description-s": [
+        "var(--font-size-description-s)",
+        "var(--font-line-height-description-s)",
+      ],
+    },
+    boxShadow: {
+      "bottom-s": "var(--shadow-bottom-small)",
+      "bottom-m": "var(--shadow-bottom-medium)",
+      "bottom-l": "var(--shadow-bottom-large)",
+      "bottom-xl": "var(--shadow-bottom-extra-large)",
+      "bottom-controls": "var(--shadow-bottom-controls)",
+      "top-s": "var(--shadow-top-small)",
+      "top-m": "var(--shadow-top-medium)",
+      "top-l": "var(--shadow-top-large)",
+      "top-xl": "var(--shadow-top-extra-large)",
+      "top-controls": "var(--shadow-top-controls)",
+      "bottom-accent-s": "var(--shadow-bottom-accent-small)",
+      "bottom-accent-m": "var(--shadow-bottom-accent-medium)",
+      "bottom-accent-l": "var(--shadow-bottom-accent-large)",
+      "bottom-accent-xl": "var(--shadow-bottom-accent-extra-large)",
+      "bottom-accent-controls": "var(--shadow-bottom-accent-controls)",
+    },
+    fontFamily: {
+      base: ["var(--font-family-base)", "sans-serif"],
+      display: ["var(--font-family-display)", "sans-serif"],
+      heading: ["var(--font-family-heading)", "sans-serif"],
+      body: ["var(--font-family-body)", "sans-serif"],
+      description: ["var(--font-family-description)", "sans-serif"],
     },
     colors: {
       base: {
@@ -429,99 +610,100 @@ export default {
   plugins: [
     plugin(function({ addComponents }) {
       addComponents({
-        ".display-large": {
-          "@apply text-[3rem] leading-[3.25rem] font-medium text-fg": {},
+        ".display-l": {
+          "@apply text-display-l font-weight-display text-fg": {},
         },
 
-        ".display-large-strong": {
-          "@apply text-[3rem] leading-[3.25rem] font-bold text-fg": {},
+        ".display-l-strong": {
+          "@apply text-display-l font-weight-display-strong text-fg": {},
         },
 
-        ".display-medium": {
-          "@apply text-[2.625rem] leading-[2.75rem] font-medium text-fg": {},
+        ".display-m": {
+          "@apply text-display-m font-weight-display text-fg": {},
         },
 
-        ".display-medium-strong": {
-          "@apply text-[2.625rem] leading-[2.75rem] font-bold text-fg": {},
+        ".display-m-strong": {
+          "@apply text-display-m font-weight-display-strong text-fg": {},
         },
 
-        ".display-small": {
-          "@apply text-[2rem] leading-[2.75rem] font-medium text-fg": {},
+        ".display-s": {
+          "@apply text-display-s font-weight-display text-fg": {},
         },
 
-        ".display-small-strong": {
-          "@apply text-[2rem] leading-[2.75rem] font-bold text-fg": {},
+        ".display-s-strong": {
+          "@apply text-display-s font-weight-display-strong text-fg": {},
         },
 
         ".heading-1": {
-          "@apply text-[1.75rem] leading-[2rem] font-bold text-fg": {},
+          "@apply text-heading-1 font-weight-heading text-fg": {},
         },
 
         ".heading-2": {
-          "@apply text-[1.375rem] leading-[1.5rem] font-bold text-fg": {},
+          "@apply text-heading-2 font-weight-heading text-fg": {},
         },
 
         ".heading-3": {
-          "@apply text-[1.125rem] leading-[1.25rem] font-bold text-fg": {},
+          "@apply text-heading-3 font-weight-heading text-fg": {},
         },
 
         ".heading-4": {
-          "@apply text-[1rem] leading-[1.25rem] font-bold text-fg": {},
+          "@apply text-heading-4 font-weight-heading text-fg": {},
         },
 
         ".heading-5": {
-          "@apply text-[0.875rem] leading-[1.25rem] font-bold text-fg": {},
+          "@apply text-heading-5 font-weight-heading text-fg": {},
         },
 
-        ".body-large": {
-          "@apply text-[1.125rem] leading-[1.625rem] font-normal text-fg": {},
+        ".body-l": {
+          "@apply text-body-l font-weight-body text-fg": {},
         },
 
-        ".body-large-strong": {
-          "@apply text-[1.125rem] leading-[1.625rem] font-medium text-fg": {},
+        ".body-l-strong": {
+          "@apply text-body-l font-weight-body-strong text-fg": {},
         },
 
-        ".body-medium": {
-          "@apply text-[1rem] leading-[1.5rem] font-normal text-fg": {},
+        ".body-m": {
+          "@apply text-body-m font-weight-body text-fg": {},
         },
 
-        ".body-medium-strong": {
-          "@apply text-[1rem] leading-[1.5rem] font-medium text-fg": {},
+        ".body-m-strong": {
+          "@apply text-body-m font-weight-body-strong text-fg": {},
         },
 
-        ".body-small": {
-          "@apply text-[0.875rem] leading-[1.25rem] font-normal text-fg": {},
+        ".body-s": {
+          "@apply text-body-s font-weight-body text-fg": {},
         },
 
-        ".body-small-strong": {
-          "@apply text-[0.875rem] leading-[1.25rem] font-medium text-fg": {},
+        ".body-s-strong": {
+          "@apply text-body-s font-weight-body-strong text-fg": {},
         },
 
-        ".description-large": {
-          "@apply text-[0.75rem] leading-[1rem] font-normal text-fg": {},
+        ".description-l": {
+          "@apply text-description-l font-weight-description text-fg": {},
         },
 
-        ".description-large-strong": {
-          "@apply text-[0.75rem] leading-[1rem] font-medium text-fg": {},
-        },
-
-        ".description-medium": {
-          "@apply text-[0.688rem] leading-[1rem] tracking-[0.0125rem] font-normal text-fg":
+        ".description-l-strong": {
+          "@apply text-description-l font-weight-description-strong text-fg":
             {},
         },
 
-        ".description-medium-strong": {
-          "@apply text-[0.688rem] leading-[1rem] tracking-[0.0125rem] font-medium text-fg":
+        ".description-m": {
+          "@apply text-description-m tracking-description-m font-weight-description text-fg":
             {},
         },
 
-        ".description-small": {
-          "@apply text-[0.625rem] leading-[0.75rem] tracking-[0.025rem] font-normal text-fg":
+        ".description-m-strong": {
+          "@apply text-description-m tracking-description-m font-weight-description-strong text-fg":
             {},
         },
 
-        ".description-small-strong": {
-          "@apply text-[0.625rem] leading-[0.75rem] tracking-[0.025rem] font-medium text-fg":
+        ".description-s": {
+          "@apply text-[0.625rem] tracking-description-s font-weight-description text-fg":
+            {},
+        },
+
+        ".description-s-strong": {
+          "@apply text-description-m tracking-description-s font-weight-description-strong text-fg":
             {},
         },
       });
