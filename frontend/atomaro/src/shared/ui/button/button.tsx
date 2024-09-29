@@ -1,0 +1,81 @@
+import { ButtonHTMLAttributes, forwardRef } from "react";
+import { cn } from "@/shared/lib/utils";
+import { Slot } from "@radix-ui/react-slot";
+
+type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
+type ButtonColors =
+  | "accent"
+  | "neutral"
+  | "error"
+  | "success"
+  | "info"
+  | "status-01"
+  | "status-02"
+  | "status-03"
+  | "status-04"
+  | "status-05"
+  | "status-06";
+type ButtonSize = "xl" | "lg" | "md" | "sm";
+
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: ButtonVariant;
+  color?: ButtonColors;
+  size?: ButtonSize;
+  asChild?: boolean;
+}
+
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  (
+    {
+      className,
+      variant = "primary",
+      color = "accent",
+      size = "xl",
+      asChild = false,
+      ...props
+    },
+    ref,
+  ) => {
+    const Comp = asChild ? Slot : "button";
+
+    return (
+      <Comp
+        className={cn(
+          // ring-offset-<color>. Ты можешь поменять в className под тот фон, под которым находится кнопка
+          // по умолчанию стоит ring-offset-bg-page
+          "focus-visible:outline-none disabled:pointer-events-none disabled:bg-bg-disabled disabled:text-fg-disabled focus-visible:ring-4 focus-visible:ring-offset-2 focus-visible:ring-accent-container ring-offset-bg-page",
+          (() => {
+            switch (variant) {
+              case "primary":
+                return `bg-${color} text-${color}-on-${color} hover:bg-${color}-hover focus-visible:bg-${color}-hover`;
+              case "secondary":
+                return `bg-${color}-container text-${color}-on-container hover:bg-${color}-container-hover hover:text-${color}-hover focus-visible:bg-${color}-container-hover focus-visible:text-${color}-hover`;
+              case "outline":
+                return `bg-transparent outline outline-[1.5px] outline-offset-[-1.5px] outline-${color}-muted hover:outline-${color}-soft hover:bg-${color}-container focus-visible:bg-${color}-container text-${color}-on-container focus-visible:text-${color}-hover focus-visible:outline-${color}-soft hover:text-${color}-hover focus-visible:outline disabled:outline-bg-disabled disabled:bg-transparent`;
+              case "ghost":
+                return `text-${color}-on-container bg-transparent hover:bg-${color}-container hover:text-${color}-hover focus-visible:bg-${color}-container focus-visible:text-${color}-hover disabled:bg-transparent`;
+            }
+          })(),
+          (() => {
+            switch (size) {
+              case "xl":
+                return "rounded-[16px] py-4 px-6 body-m-strong";
+              case "lg":
+                return "rounded-[16px] py-3 px-5 body-m-strong";
+              case "md":
+                return "rounded-[11px] py-2 px-4 body-s-strong";
+              case "sm":
+                return "rounded-[8px] py-1 px-3 description-l-strong";
+            }
+          })(),
+          className,
+        )}
+        ref={ref}
+        {...props}
+      />
+    );
+  },
+);
+Button.displayName = "Button";
+
+export { Button };

@@ -2,8 +2,24 @@ import plugin from "tailwindcss/plugin";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{tsx,ts,jsx,js}"],
+  safelist: [
+    {
+      pattern:
+        /^(text|bg|outline|border)-(accent|info|warning|error|success|neutral|status-0[1-6])(?:-(muted|hover|active|soft|container|on-container|on-(accent|info|warning|error|success|neutral|status-0[1-6]))(?:-(soft|hover|active|muted))?)?(?!.*\d$)/,
+      variants: ["hover", "focus-visible", "disabled"],
+    },
+  ],
   theme: {
     extend: {
+      fontWeight: {
+        "weight-display": "var(--font-weight-display)",
+        "weight-display-strong": "var(--font-weight-display-strong)",
+        "weight-heading": "var(--font-weight-heading)",
+        "weight-body": "var(--font-weight-body)",
+        "weight-body-strong": "var(--font-weight-body-strong)",
+        "weight-description": "var(--font-weight-description)",
+        "weight-description-strong": "var(--font-weight-description-strong)",
+      },
       spacing: {
         base: "var(--spacing-base)",
         none: "var(--spacing-base)",
@@ -102,15 +118,6 @@ export default {
       "expressive-exit": "var(--motion-easing-expressive-exit)",
       "expressive-bouncing": "var(--motion-easing-expressive-bouncing)",
     },
-    fontWeight: {
-      "weight-display": "var(--font-weight-display)",
-      "weight-display-strong": "var(--font-weight-display-strong)",
-      "weight-heading": "var(--font-weight-heading)",
-      "weight-body": "var(--font-weight-body)",
-      "weight-body-strong": "var(--font-weight-body-strong)",
-      "weight-description": "var(--font-weight-description)",
-      "weight-description-strong": "var(--font-weight-description-strong)",
-    },
     letterSpacing: {
       "description-m": "var(--font-letter-spacing-description-m)",
       "description-s": "var(--font-letter-spacing-description-s)",
@@ -166,6 +173,7 @@ export default {
       ],
     },
     boxShadow: {
+      "button-ring": "var(--shadow-button-ring)",
       "bottom-s": "var(--shadow-bottom-small)",
       "bottom-m": "var(--shadow-bottom-medium)",
       "bottom-l": "var(--shadow-bottom-large)",
@@ -190,6 +198,8 @@ export default {
       description: ["var(--font-family-description)", "sans-serif"],
     },
     colors: {
+      current: "currentColor",
+      transparent: "transparent",
       base: {
         neutral: "hsla(var(--base-neutral))",
         accent: "hsla(var(--base-accent))",
@@ -698,12 +708,12 @@ export default {
         },
 
         ".description-s": {
-          "@apply text-[0.625rem] tracking-description-s font-weight-description text-fg":
+          "@apply text-description-s tracking-description-s font-weight-description text-fg":
             {},
         },
 
         ".description-s-strong": {
-          "@apply text-description-m tracking-description-s font-weight-description-strong text-fg":
+          "@apply text-description-s tracking-description-s font-weight-description-strong text-fg":
             {},
         },
       });

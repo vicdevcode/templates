@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    /* BASE */
     /* COLOR */
     --base-neutral: 220, 9%, 38%, 1;
 
@@ -821,7 +822,7 @@
     /* TYPOGRAPHY BODY */
     --font-family-body: Inter;
 
-    --font-weight-body-strong: 500;
+    --font-weight-body-strong: 600;
 
     --font-weight-body: 400;
 
@@ -840,7 +841,7 @@
     /* TYPOGRAPHY DESCRIPTION */
     --font-family-description: Inter;
 
-    --font-weight-description-strong: 500;
+    --font-weight-description-strong: 600;
 
     --font-weight-description: 400;
 
@@ -861,6 +862,8 @@
     --font-line-height-description-s: 0.75rem;
 
     /* SHADOW */
+    --shadow-button-ring: 0 0 0 2px var(--tw-shadow-color, hsla(0, 0, 0, 0));
+
     --shadow-bottom-small: 0 2px 4px 0 var(--tw-shadow-color, hsla(var(--neutral-container-soft))),
       0 0 8px 0 var(--tw-shadow-color, hsla(var(--neutral-container-soft)));
 
