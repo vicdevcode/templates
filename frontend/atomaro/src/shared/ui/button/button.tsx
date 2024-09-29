@@ -1,20 +1,10 @@
 import { ButtonHTMLAttributes, forwardRef } from "react";
 import { cn } from "@/shared/lib/utils";
 import { Slot } from "@radix-ui/react-slot";
+import { DefaultColor } from "@/shared/types/default-colors";
 
 type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
-type ButtonColors =
-  | "accent"
-  | "neutral"
-  | "error"
-  | "success"
-  | "info"
-  | "status-01"
-  | "status-02"
-  | "status-03"
-  | "status-04"
-  | "status-05"
-  | "status-06";
+type ButtonColors = DefaultColor;
 type ButtonSize = "xl" | "lg" | "md" | "sm";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

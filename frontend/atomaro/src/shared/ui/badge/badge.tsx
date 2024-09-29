@@ -1,19 +1,9 @@
 import { FC, HTMLAttributes } from "react";
 import { cn } from "@/shared/lib/utils";
+import { DefaultColor } from "@/shared/types/default-colors";
 
 type BadgeVariant = "primary" | "secondary";
-type BadgeColors =
-  | "info"
-  | "warning"
-  | "error"
-  | "success"
-  | "neutral"
-  | "status-01"
-  | "status-02"
-  | "status-03"
-  | "status-04"
-  | "status-05"
-  | "status-06";
+type BadgeColors = DefaultColor;
 type BadgeSize = "md" | "sm";
 
 interface BadgeProps extends HTMLAttributes<HTMLDivElement> {
