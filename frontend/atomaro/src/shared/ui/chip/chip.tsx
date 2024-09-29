@@ -30,6 +30,7 @@ const Chip = forwardRef<
           : variant == "secondary"
             ? `bg-transparent outline outline-[1.5px] outline-offset-[-1.5px] outline-border-soft hover:outline-accent-soft focus-visible:outline-accent-soft data-[state=on]:outline-accent data-[state=on]:hover:outline-accent-hover data-[state=on]:focus-visible:outline-accent-hover data-[state=on]:disabled:outline-accent-container`
             : "",
+        "[&>svg]:fill-current",
         className,
       )}
       ref={ref}
