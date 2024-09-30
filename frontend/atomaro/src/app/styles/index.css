@@ -910,31 +910,31 @@
       0 0 1px 0 var(--tw-shadow-color, hsla(var(--neutral-container-soft)));
 
     /* BORDER */
-    --border-radius-base: 6px;
+    --border-radius-base: 0;
 
     --border-radius-none: 0;
 
     --border-radius-full: 9999px;
 
-    --border-radius-2xs: 2px;
+    --border-radius-2xs: 4px;
 
-    --border-radius-xs: 3px;
+    --border-radius-xs: 8px;
 
-    --border-radius-s: 4px;
+    --border-radius-s: 11px;
 
-    --border-radius-m: 6px;
+    --border-radius-m: 16px;
 
-    --border-radius-l: 9px;
+    --border-radius-l: 24px;
 
-    --border-radius-xl: 12px;
+    --border-radius-xl: 32px;
 
-    --border-radius-2xl: 24px;
+    --border-radius-2xl: 64px;
 
-    --border-radius-inputs: 6px;
+    --border-radius-inputs: 16px;
 
-    --border-radius-buttons: 6px;
+    --border-radius-buttons: 16px;
 
-    --border-radius-controls: 3px;
+    --border-radius-controls: 4px;
 
     /* BORDER WIDTH */
     --border-width-none: 0;

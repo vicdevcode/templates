@@ -49,13 +49,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           (() => {
             switch (size) {
               case "xl":
-                return "rounded-[16px] py-4 px-6 body-m-strong";
+                return "rounded-m py-4 px-6 body-m-strong";
               case "lg":
-                return "rounded-[16px] py-3 px-5 body-m-strong";
+                return "rounded-m py-3 px-5 body-m-strong";
               case "md":
-                return "rounded-[11px] py-2 px-4 body-s-strong";
+                return "rounded-s py-2 px-4 body-s-strong";
               case "sm":
-                return "rounded-[8px] py-1 px-3 description-l-strong";
+                return "rounded-xs py-1 px-3 description-l-strong";
             }
           })(),
           className,

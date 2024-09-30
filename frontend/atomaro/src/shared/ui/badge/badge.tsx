@@ -24,7 +24,7 @@ export const Badge: FC<BadgeProps> = ({
   return (
     <div
       className={cn(
-        "inline-flex items-center flex-shrink-0 gap-1 rounded-[8px]",
+        "inline-flex items-center flex-shrink-0 gap-1 rounded-xs",
         size == "md"
           ? "py-1 px-2 description-l-strong"
           : size == "sm"

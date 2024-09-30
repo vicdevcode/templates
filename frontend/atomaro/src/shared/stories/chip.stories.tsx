@@ -18,16 +18,17 @@ const meta: Meta<typeof Chip> = {
 export default meta;
 type Story = StoryObj<typeof Chip>;
 
-export const Primary: Story = {
+export const Variant: Story = {
   args: {
     children: "Chips",
     variant: "primary",
   },
 };
 
-export const Secondary: Story = {
+export const WithCount: Story = {
   args: {
     children: "Chips",
-    variant: "secondary",
+    variant: "primary",
+    count: 0,
   },
 };

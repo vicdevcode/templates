@@ -41,7 +41,7 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = {
+export const Variant: Story = {
   args: {
     children: "Button label",
     variant: "primary",
@@ -50,7 +50,7 @@ export const Primary: Story = {
   },
 };
 
-export const Secondary: Story = {
+export const Color: Story = {
   args: {
     children: "Button label",
     variant: "secondary",
@@ -59,19 +59,10 @@ export const Secondary: Story = {
   },
 };
 
-export const Outline: Story = {
+export const Size: Story = {
   args: {
     children: "Button label",
     variant: "outline",
-    color: "accent",
-    size: "xl",
-  },
-};
-
-export const Ghost: Story = {
-  args: {
-    children: "Button label",
-    variant: "ghost",
     color: "accent",
     size: "xl",
   },
