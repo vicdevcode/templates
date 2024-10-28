@@ -3,11 +3,11 @@ import { cn } from "@/shared/lib/utils";
 import { Slot } from "@radix-ui/react-slot";
 import { DefaultColor } from "@/shared/types/default-colors";
 
-type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
-type ButtonColors = DefaultColor;
-type ButtonSize = "xl" | "lg" | "md" | "sm";
+export type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
+export type ButtonColors = DefaultColor;
+export type ButtonSize = "xl" | "lg" | "md" | "sm" | "";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
   color?: ButtonColors;
   size?: ButtonSize;
@@ -31,6 +31,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <Comp
         className={cn(
+          "flex gap-1",
           // ring-offset-<color>. Ты можешь поменять в className под тот фон, под которым находится кнопка
           // по умолчанию стоит ring-offset-bg-page
           "focus-visible:outline-none disabled:pointer-events-none disabled:bg-bg-disabled disabled:text-fg-disabled focus-visible:ring-4 focus-visible:ring-offset-2 focus-visible:ring-accent-container ring-offset-bg-page",
@@ -49,13 +50,15 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           (() => {
             switch (size) {
               case "xl":
-                return "rounded-m py-4 px-6 body-m-strong";
+                return `rounded-m py-4 px-6 body-m-strong`;
               case "lg":
-                return "rounded-m py-3 px-5 body-m-strong";
+                return `rounded-m py-3 px-5 body-m-strong`;
               case "md":
-                return "rounded-s py-2 px-4 body-s-strong";
+                return `rounded-s py-2 px-4 body-s-strong`;
               case "sm":
-                return "rounded-xs py-1 px-3 description-l-strong";
+                return `rounded-xs py-1 px-3 description-l-strong`;
+              default:
+                return "";
             }
           })(),
           className,

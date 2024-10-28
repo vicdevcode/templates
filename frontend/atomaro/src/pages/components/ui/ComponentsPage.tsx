@@ -1,5 +1,6 @@
 import { Checkbox } from "@/shared/ui/checkbox/checkbox";
 import { Chip } from "@/shared/ui/chip";
+import { AccordionListWidget } from "@/widgets/accordion-list";
 import { BadgeListWidget } from "@/widgets/badge-list";
 import { ButtonListWidget } from "@/widgets/button-list";
 import { Heart } from "@atomaro/icons";
@@ -14,6 +15,7 @@ export const ComponentsPage: FC = () => {
         From powerful documentation to efficient design system management, it's
         the ideal end-to-end platform that grows with your design system.
       </p>
+      <AccordionListWidget />
 
       <BadgeListWidget />
       <ButtonListWidget />

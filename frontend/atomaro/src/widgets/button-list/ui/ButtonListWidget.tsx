@@ -1,4 +1,14 @@
-import { Button } from "@/shared/ui/button";
+import { SolarAltArrowDownIcon } from "@/shared/icons";
+import { Button, FunctionButton, IconButton } from "@/shared/ui/button";
+import { CloseButton } from "@/shared/ui/button/close-button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/shared/ui/dropdown-menu";
+import { Popover, PopoverContent, PopoverTrigger } from "@/shared/ui/popover";
+import { Heart } from "@atomaro/icons";
 import { FC } from "react";
 
 export const ButtonListWidget: FC = () => {
@@ -11,6 +21,24 @@ export const ButtonListWidget: FC = () => {
             <Button size="lg">Button label</Button>
             <Button size="md">Button label</Button>
             <Button size="sm">Button label</Button>
+            <CloseButton />
+            <CloseButton size="md" />
+            <CloseButton size="sm" />
+            <CloseButton size="xs" />
+            <CloseButton size="2xs" />
+            <FunctionButton>Label</FunctionButton>
+            <FunctionButton variant="secondary">
+              Label <Heart />
+            </FunctionButton>
+            <FunctionButton variant="tertiary">
+              Label <Heart />
+            </FunctionButton>
+            <FunctionButton variant="tertiary">
+              <Heart />
+            </FunctionButton>
+            <IconButton size="md" variant="outline">
+              <SolarAltArrowDownIcon />
+            </IconButton>
           </div>
           <div className="flex flex-col gap-2 items-start">
             <Button variant="secondary" size="xl">
@@ -39,6 +67,26 @@ export const ButtonListWidget: FC = () => {
             <Button variant="outline" size="sm">
               Button label
             </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+              <DropdownMenuContent className="w-[280px]">
+                <DropdownMenuItem>Photoshop</DropdownMenuItem>
+                <DropdownMenuItem>Figma</DropdownMenuItem>
+                <DropdownMenuItem>Adobe XD</DropdownMenuItem>
+                <DropdownMenuItem>Framer</DropdownMenuItem>
+                <DropdownMenuItem>Sketch</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button>Open</Button>
+              </PopoverTrigger>
+              <PopoverContent>
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello
+              </PopoverContent>
+            </Popover>
           </div>
           <div className="flex flex-col gap-2 items-start">
             <Button variant="ghost" size="xl">

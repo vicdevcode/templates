@@ -1,4 +1,11 @@
 import plugin from "tailwindcss/plugin";
+
+//function filterDefault(values) {
+//  return Object.fromEntries(
+//    Object.entries(values).filter(([key]) => key !== "DEFAULT"),
+//  );
+//}
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{tsx,ts,jsx,js}"],
@@ -10,6 +17,17 @@ export default {
     },
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        "2xl": "3rem",
+        xl: "3rem",
+        lg: "3rem",
+        md: "2.5rem",
+        sm: "1rem",
+        DEFAULT: "1rem",
+      },
+    },
     extend: {
       fontWeight: {
         "weight-display": "var(--font-weight-display)",
@@ -52,6 +70,44 @@ export default {
         xs: "var(--size-xs)",
         "2xs": "var(--size-2xs)",
       },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "popover-enter": {
+          from: { opacity: "0" },
+          to: { opacity: "100" },
+        },
+        "popover-exit": {
+          from: { opacity: "100" },
+          to: { opacity: "0" },
+        },
+        "dropdown-enter": {
+          from: { opacity: "0" },
+          to: { opacity: "100" },
+        },
+        "dropdown-exit": {
+          from: { opacity: "100" },
+          to: { opacity: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        "popover-enter":
+          "popover-enter var(--motion-duration-xs) var(--motion-easing-productive-entrance)",
+        "popover-exit":
+          "popover-exit var(--motion-duration-xs) var(--motion-easing-productive-exit)",
+        "dropdown-enter":
+          "dropdown-enter var(--motion-duration-xs) var(--motion-easing-productive-entrance)",
+        "dropdown-exit":
+          "dropdown-exit var(--motion-duration-xs) var(--motion-easing-productive-exit)",
+      },
     },
     borderRadius: {
       base: "var(--border-radius-base)",
@@ -79,12 +135,11 @@ export default {
       dividers: "var(--border-width-dividers)",
     },
     screens: {
-      "2xs": "var(--breakpoint-2xs)",
-      xs: "var(--breakpoint-xs)",
-      s: "var(--breakpoint-s)",
-      m: "var(--breakpoint-m)",
-      l: "var(--breakpoint-l)",
-      xl: "var(--breakpoint-xl)",
+      sm: "768px",
+      md: "1024px",
+      lg: "1280px",
+      xl: "1504px",
+      "2xl": "1600px",
     },
     zIndex: {
       hide: "var(--z-index-hide)",

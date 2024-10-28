@@ -1014,15 +1014,15 @@
     /* BREAKPOINT */
     --breakpoint-2xs: 0;
 
-    --breakpoint-xs: 480;
+    --breakpoint-xs: 480px;
 
-    --breakpoint-s: 768;
+    --breakpoint-s: 768px;
 
-    --breakpoint-m: 1024;
+    --breakpoint-m: 1024px;
 
-    --breakpoint-l: 1280;
+    --breakpoint-l: 1280px;
 
-    --breakpoint-xl: 1600;
+    --breakpoint-xl: 1600px;
 
     /* Z-INDEX */
     --z-index-hide: -1;
